@@ -1,0 +1,11 @@
+sighting:
+<%= link_to 'Destroy', [sighting.animal, sighting], method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Edit", edit_animal_sighting_path(@animal) %>
+<br>
+  <%= sighting.date %>
+<br>
+  <%= sighting.longitude %>
+<br>
+  <%= sighting.latitude %>
+<%= sighting.region%>
+<br>

@@ -1,0 +1,16 @@
+<%= form_with model: [ @animal, @animal.sightings.build ] do |form| %>
+    <%= form.label :date %><br>
+    <%= form.text_field :date %>
+  <p>
+    <%= form.label :longitude %><br>
+    <%= form.text_area :longitude %>
+  </p>
+  <p>
+    <%= form.label :latitude %><br>
+    <%= form.text_area :latitude %>
+  </p>
+    <%= form.select(:region, @regions.pluck('name')) %>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
